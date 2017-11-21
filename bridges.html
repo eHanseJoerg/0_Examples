@@ -1,0 +1,298 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_c634df3df6a64601b3e87e90f535ba04 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.2/leaflet-dvf.markers.min.js"></script>
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_c634df3df6a64601b3e87e90f535ba04" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_c634df3df6a64601b3e87e90f535ba04 = L.map('map_c634df3df6a64601b3e87e90f535ba04', {
+                                           center:[45.5236,-122.675],
+                                           zoom: 13,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_f05622ef30f7404d84e6f9c8448a1e28 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_c634df3df6a64601b3e87e90f535ba04);
+
+        
+        
+            
+            var regular_polygon_marker_3896ff437eaf45c3bf947d4bb13862c4 = new L.RegularPolygonMarker(
+                new L.LatLng(45.5012,-122.6655),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#132b5e',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 10
+                    }
+                )
+                .addTo(map_c634df3df6a64601b3e87e90f535ba04);
+            
+        
+            
+            var popup_ab5b0742677f4d4ca6ccb6f1abc0fa0c = L.popup({maxWidth: '300'});
+
+            
+                var html_6ffda586946b4b43bc395894dc597300 = $('         <div id="html_6ffda586946b4b43bc395894dc597300"                 style="width: 100.0%; height: 100.0%;">                 Ross Island Bridge</div>                 ')[0];
+                popup_ab5b0742677f4d4ca6ccb6f1abc0fa0c.setContent(html_6ffda586946b4b43bc395894dc597300);
+            
+
+            regular_polygon_marker_3896ff437eaf45c3bf947d4bb13862c4.bindPopup(popup_ab5b0742677f4d4ca6ccb6f1abc0fa0c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_03bba8bc0fd2410088c0a2bc072a4a1a = new L.RegularPolygonMarker(
+                new L.LatLng(45.5132,-122.6708),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#45647d',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 10
+                    }
+                )
+                .addTo(map_c634df3df6a64601b3e87e90f535ba04);
+            
+        
+            
+            var popup_c3a9710d25fd420da1e45aec7ac41663 = L.popup({maxWidth: '300'});
+
+            
+                var html_06ff3d1789b6427586dbb469e8ae0cb4 = $('         <div id="html_06ff3d1789b6427586dbb469e8ae0cb4"                 style="width: 100.0%; height: 100.0%;">                 Hawthorne Bridge</div>                 ')[0];
+                popup_c3a9710d25fd420da1e45aec7ac41663.setContent(html_06ff3d1789b6427586dbb469e8ae0cb4);
+            
+
+            regular_polygon_marker_03bba8bc0fd2410088c0a2bc072a4a1a.bindPopup(popup_c3a9710d25fd420da1e45aec7ac41663);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4fc188a009e6401fb55349ad75160750 = new L.RegularPolygonMarker(
+                new L.LatLng(45.5275,-122.6692),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#769d96',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 10
+                    }
+                )
+                .addTo(map_c634df3df6a64601b3e87e90f535ba04);
+            
+        
+            
+            var popup_0dfe1ea1d22446b29e31deb9a7ee388c = L.popup({maxWidth: '300'});
+
+            
+                var html_d81fa527e8af46779b4fd1f3bc12788d = $('         <div id="html_d81fa527e8af46779b4fd1f3bc12788d"                 style="width: 100.0%; height: 100.0%;">                 Steel Bridge</div>                 ')[0];
+                popup_0dfe1ea1d22446b29e31deb9a7ee388c.setContent(html_d81fa527e8af46779b4fd1f3bc12788d);
+            
+
+            regular_polygon_marker_4fc188a009e6401fb55349ad75160750.bindPopup(popup_0dfe1ea1d22446b29e31deb9a7ee388c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_43fdc8f224004f3489735783e799489f = new L.RegularPolygonMarker(
+                new L.LatLng(45.5318,-122.6745),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#769d96',
+                    fillOpacity: 1,
+                    numberOfSides: 8,
+                    rotation: 0,
+                    radius: 10
+                    }
+                )
+                .addTo(map_c634df3df6a64601b3e87e90f535ba04);
+            
+        
+            
+            var popup_8e66f0b458db4857aafb341b3ae6922e = L.popup({maxWidth: '300'});
+
+            
+                var html_9d81b6be0f68417b823a53c3d08b5898 = $('         <div id="html_9d81b6be0f68417b823a53c3d08b5898"                 style="width: 100.0%; height: 100.0%;">                 Broadway Bridge</div>                 ')[0];
+                popup_8e66f0b458db4857aafb341b3ae6922e.setContent(html_9d81b6be0f68417b823a53c3d08b5898);
+            
+
+            regular_polygon_marker_43fdc8f224004f3489735783e799489f.bindPopup(popup_8e66f0b458db4857aafb341b3ae6922e);
+
+            
+        
+        
+        
+        </script>
+        

@@ -1,0 +1,225 @@
+{
+    "axes": [
+        {
+            "scale": "x",
+            "type": "x"
+        },
+        {
+            "scale": "y",
+            "type": "y"
+        }
+    ],
+    "data": [
+        {
+            "name": "table",
+            "values": [
+                {
+                    "x": "(0, 1]",
+                    "y": 101
+                },
+                {
+                    "x": "(1, 2]",
+                    "y": 268
+                },
+                {
+                    "x": "(2, 3]",
+                    "y": 395
+                },
+                {
+                    "x": "(3, 4]",
+                    "y": 458
+                },
+                {
+                    "x": "(4, 5]",
+                    "y": 576
+                },
+                {
+                    "x": "(5, 6]",
+                    "y": 479
+                },
+                {
+                    "x": "(6, 7]",
+                    "y": 429
+                },
+                {
+                    "x": "(7, 8]",
+                    "y": 502
+                },
+                {
+                    "x": "(8, 9]",
+                    "y": 491
+                },
+                {
+                    "x": "(9, 10]",
+                    "y": 326
+                },
+                {
+                    "x": "(10, 11]",
+                    "y": 223
+                },
+                {
+                    "x": "(11, 12]",
+                    "y": 70
+                }
+            ]
+        },
+        {
+            "name": "x_label",
+            "values": [
+                {
+                    "label": "Wind Speed (m/s)"
+                }
+            ]
+        },
+        {
+            "name": "y_label",
+            "values": [
+                {
+                    "label": "# of Obs"
+                }
+            ]
+        }
+    ],
+    "height": 200,
+    "marks": [
+        {
+            "from": {
+                "data": "table"
+            },
+            "properties": {
+                "enter": {
+                    "width": {
+                        "band": true,
+                        "offset": -1,
+                        "scale": "x"
+                    },
+                    "x": {
+                        "field": "data.x",
+                        "scale": "x"
+                    },
+                    "y": {
+                        "field": "data.y",
+                        "scale": "y"
+                    },
+                    "y2": {
+                        "scale": "y",
+                        "value": 0
+                    }
+                },
+                "update": {
+                    "fill": {
+                        "value": "#2a3140"
+                    }
+                }
+            },
+            "type": "rect"
+        },
+        {
+            "from": {
+                "data": "x_label"
+            },
+            "name": "x_label",
+            "properties": {
+                "enter": {
+                    "align": {
+                        "value": "center"
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    },
+                    "dy": {
+                        "value": 35
+                    },
+                    "fill": {
+                        "value": "#000"
+                    },
+                    "font": {
+                        "value": "Helvetica Neue"
+                    },
+                    "fontSize": {
+                        "value": 14
+                    },
+                    "text": {
+                        "field": "data.label"
+                    },
+                    "x": {
+                        "value": 300.0
+                    },
+                    "y": {
+                        "value": 200
+                    }
+                }
+            },
+            "type": "text"
+        },
+        {
+            "from": {
+                "data": "y_label"
+            },
+            "name": "y_label",
+            "properties": {
+                "enter": {
+                    "align": {
+                        "value": "center"
+                    },
+                    "angle": {
+                        "value": -90
+                    },
+                    "baseline": {
+                        "value": "middle"
+                    },
+                    "dy": {
+                        "value": -45
+                    },
+                    "fill": {
+                        "value": "#000"
+                    },
+                    "font": {
+                        "value": "Helvetica Neue"
+                    },
+                    "fontSize": {
+                        "value": 14
+                    },
+                    "text": {
+                        "field": "data.label"
+                    },
+                    "x": {
+                        "value": 0
+                    },
+                    "y": {
+                        "value": 100.0
+                    }
+                }
+            },
+            "type": "text"
+        }
+    ],
+    "padding": {
+        "bottom": 50,
+        "left": 60,
+        "right": 20,
+        "top": 10
+    },
+    "scales": [
+        {
+            "domain": {
+                "data": "table",
+                "field": "data.x"
+            },
+            "name": "x",
+            "range": "width",
+            "type": "ordinal"
+        },
+        {
+            "domain": {
+                "data": "table",
+                "field": "data.y"
+            },
+            "name": "y",
+            "nice": true,
+            "range": "height"
+        }
+    ],
+    "viewport": null,
+    "width": 600
+}
